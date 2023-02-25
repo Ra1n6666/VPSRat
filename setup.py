@@ -91,7 +91,7 @@ if __name__ == "__main__":
     temp = tmp.replace("b", "")
     password = temp.replace("'", "")
 
-    os.system("net user ", username, password)
+    os.system("net user " + username + " " + password)
 
     data = {
         "host" : hostname,
