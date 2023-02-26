@@ -7,7 +7,7 @@ import getpass
 
 if __name__ == "__main__":
     c = socket.socket()
-    c.connect(("192.168.1.43", 10110))
+    c.connect(("IP", 10110))
     hostname = socket.gethostname()
     username = getpass.getuser()
     IPAddr = socket.gethostbyname(hostname)
